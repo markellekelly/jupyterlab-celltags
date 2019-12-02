@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/celltags",
+  "name": "@jupyterlab/celltags-ext",
   "version": "0.2.0",
   "description": "Extension for adding descriptive tags to notebook cells (Beta)",
   "keywords": [
@@ -34,8 +34,8 @@
     "deduplicate": "jlpm yarn-deduplicate -s fewer",
     "lab:install": "jupyter labextension install .",
     "lab:link": "jupyter labextension install . --no-build",
-    "lab:uninstall": "jupyter labextension uninstall @jupyterlab/celltags",
-    "lab:unlink": "jupyter labextension uninstall @jupyterlab/celltags --no-build",
+    "lab:uninstall": "jupyter labextension uninstall @jupyterlab/celltags-ext",
+    "lab:unlink": "jupyter labextension uninstall @jupyterlab/celltags-ext --no-build",
     "precommit": "lint-staged",
     "prepublishOnly": "jlpm run clean && jlpm run build",
     "prettier": "prettier --write '**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}'",

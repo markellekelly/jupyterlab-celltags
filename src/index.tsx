@@ -7,7 +7,7 @@ import { TagsTool } from './components';
 import '../style/index.css';
 
 /**
- * Initialization data for the jupyterlab-celltags extension.
+ * Initialization data for the jupyterlab-celltags-ext extension.
  */
 function activate(
   app: JupyterLab,
@@ -19,7 +19,7 @@ function activate(
 }
 
 const extension: JupyterFrontEndPlugin<void> = {
-  id: 'jupyterlab-celltags',
+  id: 'jupyterlab-celltags-ext',
   autoStart: true,
   requires: [INotebookTools, INotebookTracker],
   activate: activate

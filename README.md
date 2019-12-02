@@ -14,7 +14,7 @@ The JupyterLab cell tags extension enables users to easily add, view, and manipu
 ## Install
 
 ```bash
-jupyter labextension install @jupyterlab/celltags
+jupyter labextension install @jupyterlab/celltags-ext
 ```
 
 ## Development

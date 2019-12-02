@@ -226,7 +226,10 @@ export class TagsTool extends NotebookTools.Tool {
     });
   }
 
-  protected onMetadataChanged(msg: ObservableJSON.ChangeMessage): void {
+  protected onActiveCellMetadataChanged(
+    msg: ObservableJSON.ChangeMessage
+  ): void {
+    // only detects the entire 'tags' list being added/deleted, not changes to it
     if (!this.widget.tagsListShallNotRefresh) {
       this.widget.validateMetadataForActiveCell();
       this.widget.loadTagsForActiveCell();
