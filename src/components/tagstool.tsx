@@ -208,6 +208,7 @@ export class TagsTool extends NotebookTools.Tool {
   protected onActiveCellChanged(msg: Message): void {
     this.widget.currentActiveCell = this.notebookTools.activeCell;
     this.widget.loadTagsForActiveCell();
+    this.widget.getAllTagsInNotebook();
   }
 
   protected onAfterShow() {
